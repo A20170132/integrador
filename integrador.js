@@ -1,0 +1,14 @@
+alert("Bienvenidos a Chick-fil-a, esta es su cuenta");
+var presupuesto=parseInt(prompt("¿Cuanto tiene de presupuesto?"));
+var entrada=parseInt(prompt("¿Cuanto cuesta la entrada?"));
+var platoprincipal=parseInt(prompt("¿Cuanto cuesta el plato principal?"));
+var postre=parseInt(prompt("¿Cuanto cuesta el postre?"));
+var total=entrada+platoprincipal+postre;
+var igv=(total*18/100)+total;
+console.log("La entrada cuesta:",entrada);
+console.log("El plato principal cuesta:",platoprincipal);
+console.log("El postre cuesta:",postre);
+console.log("El costo total es:",total);
+console.log("El costo total con IGV es:",igv);
+console.log("Chick-fil-a agradece su visita, vuelva pronto!!");
+console.log("Tu vuelto es de", (presupuesto-igv));
